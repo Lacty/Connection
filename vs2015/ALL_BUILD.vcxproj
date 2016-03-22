@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{D92B1185-A123-3659-9624-3B3508391396}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Yanai\Desktop\Connection\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Yanai/Desktop/Connection/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\bin\cmake.exe -HC:/Users/Yanai/Desktop/Connection -BC:/Users/Yanai/Desktop/Connection/vs2015 --check-stamp-file C:\Users\Yanai\Desktop\Connection\vs2015\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Yanai/Desktop/Connection/CMakeLists.txt;C:\Users\Yanai\Desktop\Connection\CMakeLists.txt;C:\Users\Yanai\Desktop\Connection\vs2015\CMakeFiles\3.5.0\CMakeSystem.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Yanai\Desktop\Connection\vs2015\CMakeFiles\3.5.0\CMakeCCompiler.cmake;C:\Users\Yanai\Desktop\Connection\vs2015\CMakeFiles\3.5.0\CMakeCXXCompiler.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeGenericSystem.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\Platform\Windows.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\Platform\WindowsPaths.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeCInformation.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeLanguageInformation.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC.cmake;C:\Users\Yanai\Desktop\Connection\vs2015\CMakeFiles\3.5.0\CMakeRCCompiler.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeRCInformation.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeCXXInformation.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeLanguageInformation.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Yanai\Desktop\Connection\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Yanai\Desktop\Connection\vs2015\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Yanai/Desktop/Connection/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\bin\cmake.exe -HC:/Users/Yanai/Desktop/Connection -BC:/Users/Yanai/Desktop/Connection/vs2015 --check-stamp-file C:\Users\Yanai\Desktop\Connection\vs2015\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Yanai/Desktop/Connection/CMakeLists.txt;C:\Users\Yanai\Desktop\Connection\CMakeLists.txt;C:\Users\Yanai\Desktop\Connection\vs2015\CMakeFiles\3.5.0\CMakeSystem.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Yanai\Desktop\Connection\vs2015\CMakeFiles\3.5.0\CMakeCCompiler.cmake;C:\Users\Yanai\Desktop\Connection\vs2015\CMakeFiles\3.5.0\CMakeCXXCompiler.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeGenericSystem.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\Platform\Windows.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\Platform\WindowsPaths.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeCInformation.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeLanguageInformation.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC.cmake;C:\Users\Yanai\Desktop\Connection\vs2015\CMakeFiles\3.5.0\CMakeRCCompiler.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeRCInformation.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeCXXInformation.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeLanguageInformation.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Yanai\Desktop\Connection\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Yanai\Desktop\Connection\vs2015\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Yanai/Desktop/Connection/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\bin\cmake.exe -HC:/Users/Yanai/Desktop/Connection -BC:/Users/Yanai/Desktop/Connection/vs2015 --check-stamp-file C:\Users\Yanai\Desktop\Connection\vs2015\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Yanai/Desktop/Connection/CMakeLists.txt;C:\Users\Yanai\Desktop\Connection\CMakeLists.txt;C:\Users\Yanai\Desktop\Connection\vs2015\CMakeFiles\3.5.0\CMakeSystem.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Yanai\Desktop\Connection\vs2015\CMakeFiles\3.5.0\CMakeCCompiler.cmake;C:\Users\Yanai\Desktop\Connection\vs2015\CMakeFiles\3.5.0\CMakeCXXCompiler.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeGenericSystem.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\Platform\Windows.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\Platform\WindowsPaths.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeCInformation.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeLanguageInformation.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC.cmake;C:\Users\Yanai\Desktop\Connection\vs2015\CMakeFiles\3.5.0\CMakeRCCompiler.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeRCInformation.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeCXXInformation.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeLanguageInformation.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Yanai\Desktop\Connection\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Yanai\Desktop\Connection\vs2015\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Yanai/Desktop/Connection/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\bin\cmake.exe -HC:/Users/Yanai/Desktop/Connection -BC:/Users/Yanai/Desktop/Connection/vs2015 --check-stamp-file C:\Users\Yanai\Desktop\Connection\vs2015\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Yanai/Desktop/Connection/CMakeLists.txt;C:\Users\Yanai\Desktop\Connection\CMakeLists.txt;C:\Users\Yanai\Desktop\Connection\vs2015\CMakeFiles\3.5.0\CMakeSystem.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Yanai\Desktop\Connection\vs2015\CMakeFiles\3.5.0\CMakeCCompiler.cmake;C:\Users\Yanai\Desktop\Connection\vs2015\CMakeFiles\3.5.0\CMakeCXXCompiler.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeGenericSystem.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\Platform\Windows.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\Platform\WindowsPaths.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeCInformation.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeLanguageInformation.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC.cmake;C:\Users\Yanai\Desktop\Connection\vs2015\CMakeFiles\3.5.0\CMakeRCCompiler.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeRCInformation.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeCXXInformation.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeLanguageInformation.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\Platform\Windows-MSVC.cmake;C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\share\cmake-3.5\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Yanai\Desktop\Connection\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Yanai\Desktop\Connection\vs2015\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/ZERO_CHECK.vcxproj">
+      <Project>C9A60321-54B3-321B-AD4F-254D98175427</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/AppNative/AppNative.vcxproj">
+      <Project>7CE8C375-1F36-3E53-88F6-33D6DFFDB911</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Audio/Audio.vcxproj">
+      <Project>3AF0A7DC-FA39-37BB-B179-25A65EA81210</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/CatmullRom/CatmullRom.vcxproj">
+      <Project>4FF64377-35B5-3CA7-B892-7C6477AFFD4E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Color/Color.vcxproj">
+      <Project>42C69166-8D7C-3448-ADEC-617C17CFD048</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Connection.vcxproj">
+      <Project>89B73047-4D35-3E2A-AD55-5A45E871FDF6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Fade/Fade.vcxproj">
+      <Project>CBC075A0-884A-3512-8092-409B0333B3BF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Font/Font.vcxproj">
+      <Project>6DA5E2C4-E22E-3AA8-9875-C986F1FFEA53</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Game/Game.vcxproj">
+      <Project>378E5641-6751-347F-8445-C9AEA4963ADA</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Graphic/Graphic.vcxproj">
+      <Project>322E2425-E9E2-3B73-BD37-49E38863B54C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Key/Key.vcxproj">
+      <Project>D1924FD3-86E5-374E-9788-1A43B7691181</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/LoadPath/LoadPath.vcxproj">
+      <Project>EA059A4B-3F69-3B08-9C52-4DBC81E412AD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/MainCamera/MainCamera.vcxproj">
+      <Project>C24E10F2-9C9F-3C33-A061-36C3E1617B38</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Mouse/Mouse.vcxproj">
+      <Project>05861621-9921-30AC-813F-DFF4B6263C71</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Noncopyable/Noncopyable.vcxproj">
+      <Project>7F0A2747-53AF-3395-BC97-578DC2FE3F27</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Random/Random.vcxproj">
+      <Project>2D0CC561-3290-32D9-AE51-A8E26B79F6C6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Rect/Rect.vcxproj">
+      <Project>912705C4-5099-32E1-897D-5346E2810DD9</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Scene/Scene.vcxproj">
+      <Project>091637D5-3262-313F-B37B-D6AAA50FD58F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Title/Title.vcxproj">
+      <Project>C83D220C-93BB-3451-8D8A-1EC201160F07</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/TweakBar/TweakBar.vcxproj">
+      <Project>345D7E6E-7CF5-37E1-9493-5324AC26BE77</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Udp/Udp.vcxproj">
+      <Project>807D3E1F-289A-3AF7-9841-634A1FBCFABA</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Utility/Utility.vcxproj">
+      <Project>00540FD5-C370-345B-BE3D-458DEB5EF6AB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Vector/Vector.vcxproj">
+      <Project>74568BBD-D7C3-34A6-A9FE-4208BAFCEC0B</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
