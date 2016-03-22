@@ -87,6 +87,8 @@ target_link_libraries(Connection ${MY_LIBS} ${EXTRA_LIBS})
 
 # --- copy Static Libraries to dir[vs2015/src/Debug]
 #
+file(MAKE_DIRECTORY ${CMAKE_SOURCE_DIR}/vs2015/src/Debug)
+file(MAKE_DIRECTORY ${CMAKE_SOURCE_DIR}/vs2015/src/Release)
 set(STATIC_LIBS
   ${CMAKE_SOURCE_DIR}/lib/Windows/AntTweakBar64.dll
   ${CMAKE_SOURCE_DIR}/lib/Windows/OpenAL32.dll
