@@ -3,13 +3,19 @@
 
 
 Udp::Udp() {
+#if _WINDOWS
   int err = WSAStartup(MAKEWORD(2, 0), &wsa_data_);
   assert(err == 0);
+#endif
 }
 
 Udp::~Udp() {
+#if _WINDOWS
   WSACleanup();
   closesocket(sock_);
+#else
+  close(sock_);
+#endif
 }
 
 
@@ -33,10 +39,18 @@ void Udp::initAddr(u_short port, const std::string& ip) {
 
   addr_.sin_family = AF_INET;
   addr_.sin_port = htons(port_);
+  
+#if _WINDOWS
   addr_.sin_addr.S_un.S_addr
     = is_host
     ? INADDR_ANY
     : inet_addr(ip_.c_str());
+#else
+  addr_.sin_addr.s_addr
+  = is_host
+  ? INADDR_ANY
+  : inet_addr(ip_.c_str());
+#endif
 
   // named the socket(bind)
   if (is_host) {
