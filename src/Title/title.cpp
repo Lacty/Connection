@@ -57,6 +57,7 @@ void Title::setThread() {
     nullPoint.push_back(0);
 
     for (size_t i = 0; i < data.size(); i++) {
+      // clang can't comparision char and NULL
       if (data[i] == NULL) {
         std::cout << "[" << i << "] is null" << std::endl;
         nullPoint.push_back(i + 1);
