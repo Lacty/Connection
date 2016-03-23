@@ -22,7 +22,7 @@ Vec convertArrayToVec(T* array) {
   return v;
 }
 
-template<typename T, std::enable_if_t<std::is_arithmetic<T>::value, nullptr_t> = nullptr>
+template<typename T, std::enable_if_t<std::is_arithmetic<T>::value, std::nullptr_t> = nullptr>
 std::vector<char> addArithmeticDataToVector(T src, std::vector<char> data) {
   std::string str;
   str = std::to_string(src);

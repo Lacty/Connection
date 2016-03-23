@@ -17,7 +17,6 @@ font_(loadAsset("rounded-l-mplus-1c-regular.ttf")) {
 }
 
 Title::~Title() {
-  thread_
   std::cout << "end title" << std::endl;
 }
 
@@ -33,7 +32,7 @@ void Title::update() {
   std::vector<char> data;
   data = addArithmeticDataToVector(self_.x, std::move(data));
   data = addArithmeticDataToVector(self_.y, std::move(data));
-  //sender_.send(data);
+  sender_.send(data);
 }
 
 void Title::draw() {
