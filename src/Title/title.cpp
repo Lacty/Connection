@@ -10,7 +10,7 @@ font_(loadAsset("rounded-l-mplus-1c-regular.ttf")) {
   font_.setSize(50);
   std::cout << "start title" << std::endl;
 
-  sender_.initAddr(12345, "127.0.0.1");
+  sender_.initAddr(12345, "192.168.10.74");
   receiver_.initAddr(12345, "");
 
   setThread();
@@ -54,7 +54,6 @@ void Title::setThread() {
   thread_ = std::thread([&] {
     std::vector<char> data = std::move(receiver_.recieve());
     std::vector<int> nullPoint;
-    nullPoint.push_back(0);
 
     for (size_t i = 0; i < data.size(); i++) {
       if (data[i] == NULL) {
