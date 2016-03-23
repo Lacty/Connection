@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Yanai/Desktop/Connection/src/Udp
+# Install script for directory: C:/Users/USER/Desktop/Connection/src/Udp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

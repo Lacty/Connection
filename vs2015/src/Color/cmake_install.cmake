@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Yanai/Desktop/Connection/src/Color
+# Install script for directory: C:/Users/USER/Desktop/Connection/src/Color
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\Yanai\Desktop\Connection\src\LoadPath\loadPath.cpp">
+    <ClCompile Include="C:\Users\USER\Desktop\Connection\src\LoadPath\loadPath.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\Yanai\Desktop\Connection\src\LoadPath\loadPath.hpp">
+    <ClInclude Include="C:\Users\USER\Desktop\Connection\src\LoadPath\loadPath.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Yanai\Desktop\Connection\src\LoadPath\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\USER\Desktop\Connection\src\LoadPath\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{C0BA7E78-FC63-3C00-A2A6-03A75A456577}</UniqueIdentifier>
+      <UniqueIdentifier>{F892EBB0-A493-3F56-BCB4-F0BE467F7487}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{A2921DFB-9E0B-3CDE-A592-CFCA1CA43188}</UniqueIdentifier>
+      <UniqueIdentifier>{CE019DF1-DCD0-35FB-8965-8EE9E759E408}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

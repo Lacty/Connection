@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Yanai/Desktop/Connection/src/AppNative
+# Install script for directory: C:/Users/USER/Desktop/Connection/src/AppNative
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
