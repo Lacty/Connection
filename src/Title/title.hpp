@@ -19,6 +19,7 @@ private:
   bool isFinishReceive;
 
   void setThread();
+  void terminateThread();
 
 public:
   Title(AppNative* app);

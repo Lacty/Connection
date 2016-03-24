@@ -17,12 +17,13 @@ font_(loadAsset("rounded-l-mplus-1c-regular.ttf")) {
 }
 
 Title::~Title() {
+  terminateThread();
   std::cout << "end title" << std::endl;
 }
 
 
 void Title::update() {
-  if (app_->isPushKey(GLFW_KEY_N)) { is_finish_ = true; }
+  if (app_->isPushKey(GLFW_KEY_N)) { is_finish_ = true; fade_ = Fade(Fade::Type::Out); }
   if (app_->isPressKey(GLFW_KEY_A)) { self_.x -= 0.6f; }
   if (app_->isPressKey(GLFW_KEY_D)) { self_.x += 0.6f; }
   if (isFinishReceive) {
@@ -68,7 +69,18 @@ void Title::setThread() {
 
     other_.x = std::atof(&data[nullPoint[0]]);
     other_.y = std::atof(&data[nullPoint[1]]);
-
+    
+    
     isFinishReceive = true;
   });
+}
+
+void Title::terminateThread() {
+  Udp sender;
+  sender.initAddr(12345, "127.0.0.1");
+  std::vector<char> data;
+  data = addArithmeticDataToVector(self_.x, std::move(data));
+  data = addArithmeticDataToVector(self_.y, std::move(data));
+  sender.send(data);
+  thread_.join();
 }
