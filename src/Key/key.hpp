@@ -11,6 +11,11 @@ private:
   std::set<int> press_;
 
 public:
+  void clear() {
+    push_.clear();
+    pull_.clear();
+  }
+
   void setKeyPush(int key) { push_.emplace(key); }
   void setKeyPull(int key) { pull_.emplace(key); }
   void setKeyPress(int key) { press_.emplace(key); }

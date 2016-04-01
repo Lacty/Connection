@@ -16,6 +16,11 @@ private:
 public:
   Mouse() :pos_(0, 0) {};
 
+  void clear() {
+    push_.clear();
+    pull_.clear();
+  }
+
   void setButtonPush(int button) { push_.emplace(button); }
   void setButtonPull(int button) { pull_.emplace(button); }
   void setButtonPress(int button) { press_.emplace(button); }
