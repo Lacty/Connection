@@ -109,8 +109,6 @@ void AppNative::setCallBackFunc() {
 
 bool AppNative::isOpen() {
   end().begin();
-  key_.clear();
-  mouse_.clear();
   return !glfwWindowShouldClose(gl_win_);
 }
 
@@ -121,6 +119,8 @@ AppNative& AppNative::begin() {
 
 AppNative& AppNative::end() {
   tweakBar_.draw();
+  key_.clear();
+  mouse_.clear();
   glfwSwapBuffers(gl_win_);
   glfwPollEvents();
   return *this;
