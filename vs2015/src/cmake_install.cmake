@@ -50,6 +50,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("C:/Users/Yanai/Desktop/Connection/vs2015/src/Title/cmake_install.cmake")
   include("C:/Users/Yanai/Desktop/Connection/vs2015/src/Game/cmake_install.cmake")
   include("C:/Users/Yanai/Desktop/Connection/vs2015/src/Udp/cmake_install.cmake")
+  include("C:/Users/Yanai/Desktop/Connection/vs2015/src/Tcp/cmake_install.cmake")
 
 endif()
 

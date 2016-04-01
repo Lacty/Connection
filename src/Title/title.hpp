@@ -1,25 +1,11 @@
 
 #pragma once
-#include <thread>
-
 #include "../Scene/sceneBase.hpp"
-#include "../Udp/udp.hpp"
 
 
 class Title : public SceneBase {
 private:
   Font font_;
-  Udp sender_;
-  Udp receiver_;
-
-  Vec2f self_;
-  Vec2f other_;
-
-  std::thread thread_;
-  bool isFinishReceive;
-
-  void setThread();
-  void terminateThread();
 
 public:
   Title(AppNative* app);
