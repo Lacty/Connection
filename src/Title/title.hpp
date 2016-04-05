@@ -7,6 +7,7 @@
 class Title : public SceneBase {
 private:
   Font font_;
+  Vec2d pos_;
   Network net_;
 
 public:

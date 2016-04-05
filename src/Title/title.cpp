@@ -6,10 +6,11 @@
 
 Title::Title(AppNative* app) :
 SceneBase(app, Fade(Fade::Type::In)),
-font_(loadAsset("rounded-l-mplus-1c-regular.ttf")) {
+font_(loadAsset("rounded-l-mplus-1c-regular.ttf")),
+pos_(0, 0),
+net_("112.78.125.193", 12345) {
   font_.setSize(50);
   std::cout << "start title" << std::endl;
-  net_.add("posx", "aa");
 }
 
 Title::~Title() {
@@ -19,10 +20,16 @@ Title::~Title() {
 
 void Title::update() {
   if (app_->isPushKey(GLFW_KEY_N)) { is_finish_ = true; fade_ = Fade(Fade::Type::Out); }
+
+  net_.add("posx", pos_.x);
+  net_.add("posy", pos_.y);
+  net_.connect();
 }
 
 void Title::draw() {
   font_.draw("Title", Vec2f(app_->windowCenter()));
+
+  drawRect(Vec3f(pos_), Vec2f(50, 50), ColorA::white());
 }
 
 

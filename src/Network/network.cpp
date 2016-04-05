@@ -14,17 +14,17 @@ Network::~Network() {}
 
 
 void Network::connect() {
-  // return if unenable connect and thread is finished
   if (!is_enable_ && is_fin_) return;
 
   // join thread if finished
   if (th_.joinable() && is_fin_) th_.join();
 
-  // return if unenable connect
   if (!is_enable_) return;
 
-  // return if it is still being processed
+  send_.clear();
   if (!is_fin_) return;
+
+  if (th_.joinable()) th_.join();
 
   // set thread
   th_ = std::thread([&] {
@@ -34,11 +34,13 @@ void Network::connect() {
 
     // connect to server
     tcp_.connect(ip_, port_);
-    tcp_ << val.serialize();
+    //tcp_ << val.serialize();
     tcp_ >> data;
 
     picojson::parse(val, data);
     recv_ = val.get<picojson::object>();
+
+    std::cout << recv_["name"].get<std::string>().c_str() << std::endl;
 
     is_fin_ = true;
   });

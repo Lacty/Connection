@@ -99,7 +99,7 @@ bool Tcp::connect(const std::string &address, const int port) {
   // report err if failed
   if(!is_valid())
   {
-    perror("Socket::connect() err");
+    perror("Socket::socket() err");
     return false;
   }
   
