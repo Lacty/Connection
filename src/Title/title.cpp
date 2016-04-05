@@ -9,6 +9,7 @@ SceneBase(app, Fade(Fade::Type::In)),
 font_(loadAsset("rounded-l-mplus-1c-regular.ttf")) {
   font_.setSize(50);
   std::cout << "start title" << std::endl;
+  net_.add("posx", "aa");
 }
 
 Title::~Title() {

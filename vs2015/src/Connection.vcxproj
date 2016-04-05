@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{89B73047-4D35-3E2A-AD55-5A45E871FDF6}</ProjectGUID>
+    <ProjectGUID>{0C940D67-F81A-3946-875E-C2FA01AC85D9}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>Connection</ProjectName>
@@ -58,25 +58,25 @@
   <PropertyGroup Label="UserMacros" />
     <PropertyGroup>
       <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Yanai\Desktop\Connection\vs2015\src\Debug\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\USER\Desktop\Connection\vs2015\src\Debug\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Connection.dir\Debug\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Connection</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
       <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
       <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Yanai\Desktop\Connection\vs2015\src\Release\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\USER\Desktop\Connection\vs2015\src\Release\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Connection.dir\Release\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Connection</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
       <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
       <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Yanai\Desktop\Connection\vs2015\src\MinSizeRel\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\USER\Desktop\Connection\vs2015\src\MinSizeRel\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Connection.dir\MinSizeRel\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Connection</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
       <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
       <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Yanai\Desktop\Connection\vs2015\src\RelWithDebInfo\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\USER\Desktop\Connection\vs2015\src\RelWithDebInfo\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Connection.dir\RelWithDebInfo\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Connection</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
@@ -85,7 +85,7 @@
     </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Yanai\Desktop\Connection\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\Connection\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -102,10 +102,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Yanai\Desktop\Connection\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\Connection\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Yanai\Desktop\Connection\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\Connection\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -114,12 +114,12 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\Debug\AppNative.lib;Noncopyable\Debug\Noncopyable.lib;Vector\Debug\Vector.lib;Color\Debug\Color.lib;Rect\Debug\Rect.lib;Key\Debug\Key.lib;Mouse\Debug\Mouse.lib;Font\Debug\Font.lib;LoadPath\Debug\LoadPath.lib;Graphic\Debug\Graphic.lib;Audio\Debug\Audio.lib;Random\Debug\Random.lib;CatmullRom\Debug\CatmullRom.lib;TweakBar\Debug\TweakBar.lib;Utility\Debug\Utility.lib;MainCamera\Debug\MainCamera.lib;Scene\Debug\Scene.lib;Fade\Debug\Fade.lib;Title\Debug\Title.lib;Game\Debug\Game.lib;Udp\Debug\Udp.lib;Tcp\Debug\Tcp.lib;..\..\lib\Windows\OpenGL32.lib;..\..\lib\Windows\freetype.lib;..\..\lib\Windows\ftgld.lib;..\..\lib\Windows\glfw3d.lib;..\..\lib\Windows\AntTweakBar64.lib;..\..\lib\Windows\OpenAL32.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\Debug\AppNative.lib;Noncopyable\Debug\Noncopyable.lib;Vector\Debug\Vector.lib;Color\Debug\Color.lib;Rect\Debug\Rect.lib;Key\Debug\Key.lib;Mouse\Debug\Mouse.lib;Font\Debug\Font.lib;LoadPath\Debug\LoadPath.lib;Graphic\Debug\Graphic.lib;Audio\Debug\Audio.lib;Random\Debug\Random.lib;CatmullRom\Debug\CatmullRom.lib;TweakBar\Debug\TweakBar.lib;Utility\Debug\Utility.lib;MainCamera\Debug\MainCamera.lib;Scene\Debug\Scene.lib;Fade\Debug\Fade.lib;Title\Debug\Title.lib;Game\Debug\Game.lib;Udp\Debug\Udp.lib;Tcp\Debug\Tcp.lib;Network\Debug\Network.lib;..\..\lib\Windows\OpenGL32.lib;..\..\lib\Windows\freetype.lib;..\..\lib\Windows\ftgld.lib;..\..\lib\Windows\glfw3d.lib;..\..\lib\Windows\AntTweakBar64.lib;..\..\lib\Windows\OpenAL32.lib;ws2_32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/Yanai/Desktop/Connection/vs2015/src/Debug/Connection.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/Yanai/Desktop/Connection/vs2015/src/Debug/Connection.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/USER/Desktop/Connection/vs2015/src/Debug/Connection.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/USER/Desktop/Connection/vs2015/src/Debug/Connection.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version></Version>
     </Link>
@@ -129,7 +129,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Yanai\Desktop\Connection\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\Connection\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -145,10 +145,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Yanai\Desktop\Connection\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\Connection\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Yanai\Desktop\Connection\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\Connection\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -157,12 +157,12 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\Release\AppNative.lib;Noncopyable\Release\Noncopyable.lib;Vector\Release\Vector.lib;Color\Release\Color.lib;Rect\Release\Rect.lib;Key\Release\Key.lib;Mouse\Release\Mouse.lib;Font\Release\Font.lib;LoadPath\Release\LoadPath.lib;Graphic\Release\Graphic.lib;Audio\Release\Audio.lib;Random\Release\Random.lib;CatmullRom\Release\CatmullRom.lib;TweakBar\Release\TweakBar.lib;Utility\Release\Utility.lib;MainCamera\Release\MainCamera.lib;Scene\Release\Scene.lib;Fade\Release\Fade.lib;Title\Release\Title.lib;Game\Release\Game.lib;Udp\Release\Udp.lib;Tcp\Release\Tcp.lib;..\..\lib\Windows\OpenGL32.lib;..\..\lib\Windows\freetype.lib;..\..\lib\Windows\ftgld.lib;..\..\lib\Windows\glfw3d.lib;..\..\lib\Windows\AntTweakBar64.lib;..\..\lib\Windows\OpenAL32.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\Release\AppNative.lib;Noncopyable\Release\Noncopyable.lib;Vector\Release\Vector.lib;Color\Release\Color.lib;Rect\Release\Rect.lib;Key\Release\Key.lib;Mouse\Release\Mouse.lib;Font\Release\Font.lib;LoadPath\Release\LoadPath.lib;Graphic\Release\Graphic.lib;Audio\Release\Audio.lib;Random\Release\Random.lib;CatmullRom\Release\CatmullRom.lib;TweakBar\Release\TweakBar.lib;Utility\Release\Utility.lib;MainCamera\Release\MainCamera.lib;Scene\Release\Scene.lib;Fade\Release\Fade.lib;Title\Release\Title.lib;Game\Release\Game.lib;Udp\Release\Udp.lib;Tcp\Release\Tcp.lib;Network\Release\Network.lib;..\..\lib\Windows\OpenGL32.lib;..\..\lib\Windows\freetype.lib;..\..\lib\Windows\ftgld.lib;..\..\lib\Windows\glfw3d.lib;..\..\lib\Windows\AntTweakBar64.lib;..\..\lib\Windows\OpenAL32.lib;ws2_32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>No</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/Yanai/Desktop/Connection/vs2015/src/Release/Connection.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/Yanai/Desktop/Connection/vs2015/src/Release/Connection.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/USER/Desktop/Connection/vs2015/src/Release/Connection.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/USER/Desktop/Connection/vs2015/src/Release/Connection.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version></Version>
     </Link>
@@ -172,7 +172,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Yanai\Desktop\Connection\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\Connection\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -188,10 +188,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Yanai\Desktop\Connection\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\Connection\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Yanai\Desktop\Connection\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\Connection\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -200,12 +200,12 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\MinSizeRel\AppNative.lib;Noncopyable\MinSizeRel\Noncopyable.lib;Vector\MinSizeRel\Vector.lib;Color\MinSizeRel\Color.lib;Rect\MinSizeRel\Rect.lib;Key\MinSizeRel\Key.lib;Mouse\MinSizeRel\Mouse.lib;Font\MinSizeRel\Font.lib;LoadPath\MinSizeRel\LoadPath.lib;Graphic\MinSizeRel\Graphic.lib;Audio\MinSizeRel\Audio.lib;Random\MinSizeRel\Random.lib;CatmullRom\MinSizeRel\CatmullRom.lib;TweakBar\MinSizeRel\TweakBar.lib;Utility\MinSizeRel\Utility.lib;MainCamera\MinSizeRel\MainCamera.lib;Scene\MinSizeRel\Scene.lib;Fade\MinSizeRel\Fade.lib;Title\MinSizeRel\Title.lib;Game\MinSizeRel\Game.lib;Udp\MinSizeRel\Udp.lib;Tcp\MinSizeRel\Tcp.lib;..\..\lib\Windows\OpenGL32.lib;..\..\lib\Windows\freetype.lib;..\..\lib\Windows\ftgld.lib;..\..\lib\Windows\glfw3d.lib;..\..\lib\Windows\AntTweakBar64.lib;..\..\lib\Windows\OpenAL32.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\MinSizeRel\AppNative.lib;Noncopyable\MinSizeRel\Noncopyable.lib;Vector\MinSizeRel\Vector.lib;Color\MinSizeRel\Color.lib;Rect\MinSizeRel\Rect.lib;Key\MinSizeRel\Key.lib;Mouse\MinSizeRel\Mouse.lib;Font\MinSizeRel\Font.lib;LoadPath\MinSizeRel\LoadPath.lib;Graphic\MinSizeRel\Graphic.lib;Audio\MinSizeRel\Audio.lib;Random\MinSizeRel\Random.lib;CatmullRom\MinSizeRel\CatmullRom.lib;TweakBar\MinSizeRel\TweakBar.lib;Utility\MinSizeRel\Utility.lib;MainCamera\MinSizeRel\MainCamera.lib;Scene\MinSizeRel\Scene.lib;Fade\MinSizeRel\Fade.lib;Title\MinSizeRel\Title.lib;Game\MinSizeRel\Game.lib;Udp\MinSizeRel\Udp.lib;Tcp\MinSizeRel\Tcp.lib;Network\MinSizeRel\Network.lib;..\..\lib\Windows\OpenGL32.lib;..\..\lib\Windows\freetype.lib;..\..\lib\Windows\ftgld.lib;..\..\lib\Windows\glfw3d.lib;..\..\lib\Windows\AntTweakBar64.lib;..\..\lib\Windows\OpenAL32.lib;ws2_32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>No</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/Yanai/Desktop/Connection/vs2015/src/MinSizeRel/Connection.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/Yanai/Desktop/Connection/vs2015/src/MinSizeRel/Connection.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/USER/Desktop/Connection/vs2015/src/MinSizeRel/Connection.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/USER/Desktop/Connection/vs2015/src/MinSizeRel/Connection.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version></Version>
     </Link>
@@ -215,7 +215,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Yanai\Desktop\Connection\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\Connection\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -231,10 +231,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Yanai\Desktop\Connection\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\Connection\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Yanai\Desktop\Connection\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\Connection\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -243,12 +243,12 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\RelWithDebInfo\AppNative.lib;Noncopyable\RelWithDebInfo\Noncopyable.lib;Vector\RelWithDebInfo\Vector.lib;Color\RelWithDebInfo\Color.lib;Rect\RelWithDebInfo\Rect.lib;Key\RelWithDebInfo\Key.lib;Mouse\RelWithDebInfo\Mouse.lib;Font\RelWithDebInfo\Font.lib;LoadPath\RelWithDebInfo\LoadPath.lib;Graphic\RelWithDebInfo\Graphic.lib;Audio\RelWithDebInfo\Audio.lib;Random\RelWithDebInfo\Random.lib;CatmullRom\RelWithDebInfo\CatmullRom.lib;TweakBar\RelWithDebInfo\TweakBar.lib;Utility\RelWithDebInfo\Utility.lib;MainCamera\RelWithDebInfo\MainCamera.lib;Scene\RelWithDebInfo\Scene.lib;Fade\RelWithDebInfo\Fade.lib;Title\RelWithDebInfo\Title.lib;Game\RelWithDebInfo\Game.lib;Udp\RelWithDebInfo\Udp.lib;Tcp\RelWithDebInfo\Tcp.lib;..\..\lib\Windows\OpenGL32.lib;..\..\lib\Windows\freetype.lib;..\..\lib\Windows\ftgld.lib;..\..\lib\Windows\glfw3d.lib;..\..\lib\Windows\AntTweakBar64.lib;..\..\lib\Windows\OpenAL32.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\RelWithDebInfo\AppNative.lib;Noncopyable\RelWithDebInfo\Noncopyable.lib;Vector\RelWithDebInfo\Vector.lib;Color\RelWithDebInfo\Color.lib;Rect\RelWithDebInfo\Rect.lib;Key\RelWithDebInfo\Key.lib;Mouse\RelWithDebInfo\Mouse.lib;Font\RelWithDebInfo\Font.lib;LoadPath\RelWithDebInfo\LoadPath.lib;Graphic\RelWithDebInfo\Graphic.lib;Audio\RelWithDebInfo\Audio.lib;Random\RelWithDebInfo\Random.lib;CatmullRom\RelWithDebInfo\CatmullRom.lib;TweakBar\RelWithDebInfo\TweakBar.lib;Utility\RelWithDebInfo\Utility.lib;MainCamera\RelWithDebInfo\MainCamera.lib;Scene\RelWithDebInfo\Scene.lib;Fade\RelWithDebInfo\Fade.lib;Title\RelWithDebInfo\Title.lib;Game\RelWithDebInfo\Game.lib;Udp\RelWithDebInfo\Udp.lib;Tcp\RelWithDebInfo\Tcp.lib;Network\RelWithDebInfo\Network.lib;..\..\lib\Windows\OpenGL32.lib;..\..\lib\Windows\freetype.lib;..\..\lib\Windows\ftgld.lib;..\..\lib\Windows\glfw3d.lib;..\..\lib\Windows\AntTweakBar64.lib;..\..\lib\Windows\OpenAL32.lib;ws2_32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/Yanai/Desktop/Connection/vs2015/src/RelWithDebInfo/Connection.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/Yanai/Desktop/Connection/vs2015/src/RelWithDebInfo/Connection.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/USER/Desktop/Connection/vs2015/src/RelWithDebInfo/Connection.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/USER/Desktop/Connection/vs2015/src/RelWithDebInfo/Connection.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version></Version>
     </Link>
@@ -257,10 +257,10 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Yanai\Desktop\Connection\src\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Yanai/Desktop/Connection/src/CMakeLists.txt</Message>
+    <CustomBuild Include="C:\Users\USER\Desktop\Connection\src\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/USER/Desktop/Connection/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\bin\cmake.exe -HC:/Users/Yanai/Desktop/Connection -BC:/Users/Yanai/Desktop/Connection/vs2015 --check-stamp-file C:\Users\Yanai\Desktop\Connection\vs2015\src\CMakeFiles\generate.stamp
+C:\msys64\usr\bin\cmake.exe -HC:/Users/USER/Desktop/Connection -BC:/Users/USER/Desktop/Connection/vs2015 --check-stamp-file C:\Users\USER\Desktop\Connection\vs2015\src\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -268,12 +268,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Yanai/Desktop/Connection/src/CMakeLists.txt;C:\Users\Yanai\Desktop\Connection\src\CMakeLists.txt;C:\Users\Yanai\Desktop\Connection\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Yanai\Desktop\Connection\vs2015\src\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/USER/Desktop/Connection/src/CMakeLists.txt;C:\Users\USER\Desktop\Connection\src\CMakeLists.txt;C:\Users\USER\Desktop\Connection\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\USER\Desktop\Connection\vs2015\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Yanai/Desktop/Connection/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/USER/Desktop/Connection/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\bin\cmake.exe -HC:/Users/Yanai/Desktop/Connection -BC:/Users/Yanai/Desktop/Connection/vs2015 --check-stamp-file C:\Users\Yanai\Desktop\Connection\vs2015\src\CMakeFiles\generate.stamp
+C:\msys64\usr\bin\cmake.exe -HC:/Users/USER/Desktop/Connection -BC:/Users/USER/Desktop/Connection/vs2015 --check-stamp-file C:\Users\USER\Desktop\Connection\vs2015\src\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -281,12 +281,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Yanai/Desktop/Connection/src/CMakeLists.txt;C:\Users\Yanai\Desktop\Connection\src\CMakeLists.txt;C:\Users\Yanai\Desktop\Connection\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Yanai\Desktop\Connection\vs2015\src\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/USER/Desktop/Connection/src/CMakeLists.txt;C:\Users\USER\Desktop\Connection\src\CMakeLists.txt;C:\Users\USER\Desktop\Connection\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\USER\Desktop\Connection\vs2015\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Yanai/Desktop/Connection/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/USER/Desktop/Connection/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\bin\cmake.exe -HC:/Users/Yanai/Desktop/Connection -BC:/Users/Yanai/Desktop/Connection/vs2015 --check-stamp-file C:\Users\Yanai\Desktop\Connection\vs2015\src\CMakeFiles\generate.stamp
+C:\msys64\usr\bin\cmake.exe -HC:/Users/USER/Desktop/Connection -BC:/Users/USER/Desktop/Connection/vs2015 --check-stamp-file C:\Users\USER\Desktop\Connection\vs2015\src\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -294,12 +294,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Yanai/Desktop/Connection/src/CMakeLists.txt;C:\Users\Yanai\Desktop\Connection\src\CMakeLists.txt;C:\Users\Yanai\Desktop\Connection\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Yanai\Desktop\Connection\vs2015\src\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/USER/Desktop/Connection/src/CMakeLists.txt;C:\Users\USER\Desktop\Connection\src\CMakeLists.txt;C:\Users\USER\Desktop\Connection\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\USER\Desktop\Connection\vs2015\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Yanai/Desktop/Connection/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/USER/Desktop/Connection/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-C:\Users\Yanai\Downloads\cmake-3.5.0-win32-x86\cmake-3.5.0-win32-x86\bin\cmake.exe -HC:/Users/Yanai/Desktop/Connection -BC:/Users/Yanai/Desktop/Connection/vs2015 --check-stamp-file C:\Users\Yanai\Desktop\Connection\vs2015\src\CMakeFiles\generate.stamp
+C:\msys64\usr\bin\cmake.exe -HC:/Users/USER/Desktop/Connection -BC:/Users/USER/Desktop/Connection/vs2015 --check-stamp-file C:\Users\USER\Desktop\Connection\vs2015\src\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -307,83 +307,86 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Yanai/Desktop/Connection/src/CMakeLists.txt;C:\Users\Yanai\Desktop\Connection\src\CMakeLists.txt;C:\Users\Yanai\Desktop\Connection\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Yanai\Desktop\Connection\vs2015\src\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/USER/Desktop/Connection/src/CMakeLists.txt;C:\Users\USER\Desktop\Connection\src\CMakeLists.txt;C:\Users\USER\Desktop\Connection\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\USER\Desktop\Connection\vs2015\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\Yanai\Desktop\Connection\src\main.cpp"  />
+    <ClCompile Include="C:\Users\USER\Desktop\Connection\src\main.cpp"  />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/ZERO_CHECK.vcxproj">
-      <Project>C9A60321-54B3-321B-AD4F-254D98175427</Project>
+    <ProjectReference Include="C:/Users/USER/Desktop/Connection/vs2015/ZERO_CHECK.vcxproj">
+      <Project>2B3552CA-F414-3D28-AC5C-2AFD1EB77494</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/AppNative/AppNative.vcxproj">
-      <Project>7CE8C375-1F36-3E53-88F6-33D6DFFDB911</Project>
+    <ProjectReference Include="C:/Users/USER/Desktop/Connection/vs2015/src/AppNative/AppNative.vcxproj">
+      <Project>1AC92D75-A617-3231-860B-FE2C51E2E612</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Audio/Audio.vcxproj">
-      <Project>3AF0A7DC-FA39-37BB-B179-25A65EA81210</Project>
+    <ProjectReference Include="C:/Users/USER/Desktop/Connection/vs2015/src/Audio/Audio.vcxproj">
+      <Project>C7729F11-D5A6-3EAE-A129-6392FA90F0DE</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/CatmullRom/CatmullRom.vcxproj">
-      <Project>4FF64377-35B5-3CA7-B892-7C6477AFFD4E</Project>
+    <ProjectReference Include="C:/Users/USER/Desktop/Connection/vs2015/src/CatmullRom/CatmullRom.vcxproj">
+      <Project>38A6B2A0-EACC-3101-87F8-F8791471DD94</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Color/Color.vcxproj">
-      <Project>42C69166-8D7C-3448-ADEC-617C17CFD048</Project>
+    <ProjectReference Include="C:/Users/USER/Desktop/Connection/vs2015/src/Color/Color.vcxproj">
+      <Project>04E587A6-289C-3AC7-A175-69A1B2AC25FA</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Fade/Fade.vcxproj">
-      <Project>CBC075A0-884A-3512-8092-409B0333B3BF</Project>
+    <ProjectReference Include="C:/Users/USER/Desktop/Connection/vs2015/src/Fade/Fade.vcxproj">
+      <Project>D2F5645F-B3BF-39A1-B76B-9D3633F4E160</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Font/Font.vcxproj">
-      <Project>6DA5E2C4-E22E-3AA8-9875-C986F1FFEA53</Project>
+    <ProjectReference Include="C:/Users/USER/Desktop/Connection/vs2015/src/Font/Font.vcxproj">
+      <Project>19C2DC6D-1BA3-36FF-BE1D-346E7958DF78</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Game/Game.vcxproj">
-      <Project>378E5641-6751-347F-8445-C9AEA4963ADA</Project>
+    <ProjectReference Include="C:/Users/USER/Desktop/Connection/vs2015/src/Game/Game.vcxproj">
+      <Project>38E8227D-B920-373A-8B86-9B18A796A5DA</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Graphic/Graphic.vcxproj">
-      <Project>322E2425-E9E2-3B73-BD37-49E38863B54C</Project>
+    <ProjectReference Include="C:/Users/USER/Desktop/Connection/vs2015/src/Graphic/Graphic.vcxproj">
+      <Project>175E72BD-5CD4-3028-B994-0B1D96A2CFB5</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Key/Key.vcxproj">
-      <Project>D1924FD3-86E5-374E-9788-1A43B7691181</Project>
+    <ProjectReference Include="C:/Users/USER/Desktop/Connection/vs2015/src/Key/Key.vcxproj">
+      <Project>D2930784-A38F-329F-B590-09EA74042DCD</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/LoadPath/LoadPath.vcxproj">
-      <Project>EA059A4B-3F69-3B08-9C52-4DBC81E412AD</Project>
+    <ProjectReference Include="C:/Users/USER/Desktop/Connection/vs2015/src/LoadPath/LoadPath.vcxproj">
+      <Project>C29CA44B-1574-3108-9855-F4C0F021E8E0</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/MainCamera/MainCamera.vcxproj">
-      <Project>C24E10F2-9C9F-3C33-A061-36C3E1617B38</Project>
+    <ProjectReference Include="C:/Users/USER/Desktop/Connection/vs2015/src/MainCamera/MainCamera.vcxproj">
+      <Project>AF394D09-1216-3057-8133-117E12941D7B</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Mouse/Mouse.vcxproj">
-      <Project>05861621-9921-30AC-813F-DFF4B6263C71</Project>
+    <ProjectReference Include="C:/Users/USER/Desktop/Connection/vs2015/src/Mouse/Mouse.vcxproj">
+      <Project>EC5D5544-4009-3F03-992D-0CE915609B7E</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Noncopyable/Noncopyable.vcxproj">
-      <Project>7F0A2747-53AF-3395-BC97-578DC2FE3F27</Project>
+    <ProjectReference Include="C:/Users/USER/Desktop/Connection/vs2015/src/Network/Network.vcxproj">
+      <Project>D7F18E9E-B45B-361C-B1A9-C2FE8FC5BDF8</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Random/Random.vcxproj">
-      <Project>2D0CC561-3290-32D9-AE51-A8E26B79F6C6</Project>
+    <ProjectReference Include="C:/Users/USER/Desktop/Connection/vs2015/src/Noncopyable/Noncopyable.vcxproj">
+      <Project>91D512AB-A3E8-3140-97D3-73EF0D987C5D</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Rect/Rect.vcxproj">
-      <Project>912705C4-5099-32E1-897D-5346E2810DD9</Project>
+    <ProjectReference Include="C:/Users/USER/Desktop/Connection/vs2015/src/Random/Random.vcxproj">
+      <Project>5D7715C2-75F9-34CF-803D-448B5C155863</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Scene/Scene.vcxproj">
-      <Project>091637D5-3262-313F-B37B-D6AAA50FD58F</Project>
+    <ProjectReference Include="C:/Users/USER/Desktop/Connection/vs2015/src/Rect/Rect.vcxproj">
+      <Project>AFC5EA2E-70BF-3AD9-91E3-6C3BBC52E726</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Tcp/Tcp.vcxproj">
-      <Project>0FD94AB8-3C93-335B-9EFC-949F3F5BD8C7</Project>
+    <ProjectReference Include="C:/Users/USER/Desktop/Connection/vs2015/src/Scene/Scene.vcxproj">
+      <Project>BCA2510C-AFC5-3FAC-B27B-7D6FBB579CA4</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Title/Title.vcxproj">
-      <Project>C83D220C-93BB-3451-8D8A-1EC201160F07</Project>
+    <ProjectReference Include="C:/Users/USER/Desktop/Connection/vs2015/src/Tcp/Tcp.vcxproj">
+      <Project>F3636128-E63E-39FC-9A32-1C4CED1DEC38</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/TweakBar/TweakBar.vcxproj">
-      <Project>345D7E6E-7CF5-37E1-9493-5324AC26BE77</Project>
+    <ProjectReference Include="C:/Users/USER/Desktop/Connection/vs2015/src/Title/Title.vcxproj">
+      <Project>FD4201A0-D6B4-3BA5-8C5B-F7907EFAD5DD</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Udp/Udp.vcxproj">
-      <Project>807D3E1F-289A-3AF7-9841-634A1FBCFABA</Project>
+    <ProjectReference Include="C:/Users/USER/Desktop/Connection/vs2015/src/TweakBar/TweakBar.vcxproj">
+      <Project>DDB3AF4A-FC58-3944-A6A3-27FA91FF8880</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Utility/Utility.vcxproj">
-      <Project>00540FD5-C370-345B-BE3D-458DEB5EF6AB</Project>
+    <ProjectReference Include="C:/Users/USER/Desktop/Connection/vs2015/src/Udp/Udp.vcxproj">
+      <Project>73C563CB-0CBD-33F9-B1D8-04467AC13664</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/Yanai/Desktop/Connection/vs2015/src/Vector/Vector.vcxproj">
-      <Project>74568BBD-D7C3-34A6-A9FE-4208BAFCEC0B</Project>
+    <ProjectReference Include="C:/Users/USER/Desktop/Connection/vs2015/src/Utility/Utility.vcxproj">
+      <Project>E8E41ACC-F6A2-32C8-9FF5-A1F8D5182ABB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/USER/Desktop/Connection/vs2015/src/Vector/Vector.vcxproj">
+      <Project>A814E2A4-36F4-359E-A85C-91494B259DD6</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

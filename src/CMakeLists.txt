@@ -75,6 +75,7 @@ set(MY_LIBS
   Game
   Udp
   Tcp
+  Network
 )
 foreach(loop_var IN LISTS MY_LIBS)
   add_subdirectory(${loop_var})

@@ -1,11 +1,13 @@
 
 #pragma once
 #include "../Scene/sceneBase.hpp"
+#include "../Network/network.hpp"
 
 
 class Title : public SceneBase {
 private:
   Font font_;
+  Network net_;
 
 public:
   Title(AppNative* app);

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Yanai/Desktop/Connection/src/Tcp
+# Install script for directory: C:/Users/USER/Desktop/Connection/src/Tcp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
