@@ -33,6 +33,8 @@ public:
   void add(const std::string& key, T val) {
     send_.emplace(std::make_pair(key.c_str(), picojson::value(val)));
   }
+
+  void clear();
   
   void connect();
 

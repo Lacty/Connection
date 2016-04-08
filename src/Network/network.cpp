@@ -13,6 +13,10 @@ port_(port) {
 Network::~Network() {}
 
 
+void Network::clear() {
+  send_.clear();
+}
+
 void Network::connect() {
   if (!is_enable_ && is_fin_) return;
 
@@ -21,7 +25,6 @@ void Network::connect() {
 
   if (!is_enable_) return;
 
-  send_.clear();
   if (!is_fin_) return;
 
   if (th_.joinable()) th_.join();
@@ -34,13 +37,7 @@ void Network::connect() {
 
     // connect to server
     tcp_.connect(ip_, port_);
-    //tcp_ << val.serialize();
-    tcp_ >> data;
-
-    picojson::parse(val, data);
-    recv_ = val.get<picojson::object>();
-
-    std::cout << recv_["name"].get<std::string>().c_str() << std::endl;
+    tcp_ << val.serialize();
 
     is_fin_ = true;
   });
