@@ -21,8 +21,10 @@ public:
   Visualizer(Media* media, const Vec2f& pos, const Vec2f& size, int split_num = 20);
 
   
-  void draw();
-  void drawWithFFT();
+  void drawTest(const Vec2f& pos, const Vec2f& size);
+
+  void draw(const Vec2f& pos, const Vec2f& size);
+  void drawWithFFT(const Vec2f& pos, const Vec2f& size);
 
   Visualizer& setPos(const Vec2f& pos);
   Visualizer& setSize(const Vec2f& size);

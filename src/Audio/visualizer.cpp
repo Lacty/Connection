@@ -21,8 +21,31 @@ Visualizer::Visualizer(Media* media, const Vec2f& pos, const Vec2f& size, int sp
 }
 
 
-void Visualizer::draw() {
-  std::vector<float> samples = media_->currentWavData(1024);
+void Visualizer::drawTest(const Vec2f& pos, const Vec2f& size) {
+  //pos_ = pos; size_ = size;
+  std::vector<float> samples = media_->currentWavData(1024 * 10);
+
+  // FFT実行
+  Eigen::FFT<float> fft;
+  std::vector<std::complex<float> > freq;
+  fft.fwd(freq, samples);
+
+  size_t freq_size = freq.size() / 20;
+
+  // 必ず棒が表示されるように
+  const int offset = 2;
+
+  for (size_t i = 1; i < freq_size; ++i) {
+    std::complex<float> a = freq[i];
+    float y = std::sqrt(a.real() * a.real() + a.imag() * a.imag()) * 2 + offset;
+    float x = (float(size_.x) / freq_size) * i - (size_.x / 2);
+    drawLine(Vec2f(x, pos_.y), Vec2f(x, y + pos_.y), 2, Color(1, 0.6, 0));
+  }
+}
+
+void Visualizer::draw(const Vec2f& pos, const Vec2f& size) {
+  pos_ = pos; size_ = size;
+  std::vector<float> samples = media_->currentWavData(1024 * 10);
   
   // 取り出した波形を折れ線グラフで描画
   for (size_t i = 1; i < samples.size(); ++i) {
@@ -36,7 +59,8 @@ void Visualizer::draw() {
   }
 }
 
-void Visualizer::drawWithFFT() {
+void Visualizer::drawWithFFT(const Vec2f& pos, const Vec2f& size) {
+  pos_ = pos; size_ = size;
   std::vector<float> samples = media_->currentWavData(1024 * 10);
 
   // FFT実行

@@ -3,7 +3,7 @@
 
 
 class Noncopyable {
-public:
+protected:
   // Object obj = other; 禁止
   Noncopyable(const Noncopyable&) = delete;
 
@@ -12,5 +12,5 @@ public:
   
   // コンストラクタ,デストラクタ default指定
   Noncopyable() = default;
-  ~Noncopyable() = default;
+  virtual ~Noncopyable() {};
 };

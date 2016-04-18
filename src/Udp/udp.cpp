@@ -35,22 +35,15 @@ void Udp::initAddr(u_short port, const std::string& ip) {
   port_ = port;
   ip_ = ip;
 
-  bool is_host = ip_.size() <= 0;
+  bool is_host = ip_.empty();
 
   addr_.sin_family = AF_INET;
   addr_.sin_port = htons(port_);
   
-#if _WINDOWS
-  addr_.sin_addr.S_un.S_addr
+  addr_.sin_addr.s_addr
     = is_host
     ? INADDR_ANY
     : inet_addr(ip_.c_str());
-#else
-  addr_.sin_addr.s_addr
-  = is_host
-  ? INADDR_ANY
-  : inet_addr(ip_.c_str());
-#endif
 
   // named the socket(bind)
   if (is_host) {
@@ -61,10 +54,16 @@ void Udp::initAddr(u_short port, const std::string& ip) {
   }
 }
 
-std::vector<char> Udp::recieve() {
-  std::vector<char> data(1024, NULL);
-  int nrecv = recv(sock_, &data[0], sizeof(data), 0);
 
+std::string Udp::recieve() {
+  std::string data;
+  data.clear();
+
+  char buf[BUF_SIZE + 1];
+
+  int nrecv = recv(sock_, buf, BUF_SIZE, 0);
+
+  data = buf;
   data.resize(nrecv);
 
   // err check
@@ -76,9 +75,9 @@ std::vector<char> Udp::recieve() {
   return std::move(data);
 }
 
-void Udp::send(const std::vector<char>& data) {
-  int nwrite = sendto(sock_, &data[0], (int)data.size(), 0, (sockaddr*)&addr_, sizeof(addr_));
-
+void Udp::send(const std::string& data) {
+  int nwrite = sendto(sock_, data.c_str(), data.length(), 0, (sockaddr*)&addr_, sizeof(addr_));
+  std::cout << nwrite << std::endl;
   // err check
   if (nwrite <= 0) {
     std::cout << "[SendTo] SendTo Failed:" << nwrite << std::endl;

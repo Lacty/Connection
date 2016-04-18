@@ -2,22 +2,27 @@
 #pragma once
 #include <thread>
 #include "picojson.h"
-#include "../Tcp/tcp.hpp"
+#include "../Udp/udp.hpp"
 
 
 class Network {
 private:
   std::string ip_;
   int port_;
-  Tcp tcp_;
+  Udp udp_send_;
+  Udp udp_recv_;
 
   picojson::object recv_;
   picojson::object send_;
 
-  std::thread th_;
+  std::thread th_send_;
+  std::thread th_recv_;
 
   bool is_enable_;
-  bool is_fin_;
+  bool is_fin_send_;
+  bool is_fin_recv_;
+
+  bool lock_;
 
 public:
   Network() = default;
@@ -26,6 +31,7 @@ public:
 
   template<typename T>
   T get(const std::string& key) {
+    if (recv_.empty()) return 0;
     return recv_[key].get<T>();
   }
 
@@ -34,10 +40,15 @@ public:
     send_.emplace(std::make_pair(key.c_str(), picojson::value(val)));
   }
 
-  void clear();
-  
-  void connect();
+  void clearSendBuf();
+
+  void setSendThread();
+  void setRecvThread();
 
   void enable();
   void disable();
+  void exit();
+
+  void lock() { lock_ = true; }
+  void unLock() { lock_ = false; }
 }; 

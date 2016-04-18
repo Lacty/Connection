@@ -4,10 +4,14 @@
 #include <FTGL/ftgl.h>
 #include "../Vector/vector.hpp"
 
+#include <string>
+#include <codecvt>
+
 
 class Font {
 private:
   FTPixmapFont font_;
+  std::wstring_convert<std::codecvt<wchar_t, char, mbstate_t>> cv_;
 
 public:
   Font() = default;

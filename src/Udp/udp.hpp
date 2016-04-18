@@ -10,9 +10,11 @@
 #endif
 
 #include <iostream>
-#include <vector>
+#include <string>
 #include <assert.h>
 
+
+const int BUF_SIZE = 256;
 
 class Udp {
 private:
@@ -35,7 +37,7 @@ public:
 
   void initAddr(u_short port, const std::string& ip);
 
-  std::vector<char> recieve();
+  std::string recieve();
 
-  void send(const std::vector<char>& data);
+  void send(const std::string& data);
 };
