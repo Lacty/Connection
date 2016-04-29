@@ -1,0 +1,4 @@
+/Users/yanai/Desktop/Connection/Server/xcode/CMakeFiles/ALL_BUILD.dir
+/Users/yanai/Desktop/Connection/Server/xcode/CMakeFiles/ZERO_CHECK.dir
+/Users/yanai/Desktop/Connection/Server/xcode/src/CMakeFiles/Server.dir
+/Users/yanai/Desktop/Connection/Server/xcode/src/Udp/CMakeFiles/Udp.dir

@@ -1,4 +1,4 @@
-﻿
+
 # --- Set include directories
 #
 include_directories(
@@ -9,7 +9,7 @@ include_directories(
 # --- Set compile options
 #
 if (APPLE)
-  set(CMAKE_C_FLAGS -Wall)
+  set(CMAKE_C_FLAGS -Wall -g)
   add_definitions(-std=c++14)
 endif()
 

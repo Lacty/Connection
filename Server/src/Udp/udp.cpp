@@ -19,19 +19,17 @@ Udp::Udp() {
 
 Udp::~Udp() {
   closeSock();
-  WSACleanup();
 }
 
 
 void Udp::createSock() {
-  closeSock();
-
   sock_ = ::socket(AF_INET, SOCK_DGRAM, 0);
   assert(sock_ != 0);
 }
 
 void Udp::closeSock() {
 #if defined(WIN32) || defined(_WINDOWS)
+  WSACleanup();
   closesocket(sock_);
 #else
   close(sock_);
@@ -86,7 +84,7 @@ void Udp::send(const std::string& data) {
 std::string Udp::recv() {
   std::string data;
   this->recv(data);
-  return std::move(data);
+  return data;
 }
 
 // operators
