@@ -1,0 +1,4 @@
+C:/Users/USER/Desktop/Connection/Server/vs2015/CMakeFiles/ALL_BUILD.dir
+C:/Users/USER/Desktop/Connection/Server/vs2015/CMakeFiles/ZERO_CHECK.dir
+C:/Users/USER/Desktop/Connection/Server/vs2015/src/CMakeFiles/Server.dir
+C:/Users/USER/Desktop/Connection/Server/vs2015/src/Udp/CMakeFiles/Udp.dir

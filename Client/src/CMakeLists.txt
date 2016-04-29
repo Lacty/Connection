@@ -1,4 +1,4 @@
-
+﻿
 # --- Set include directories
 #
 include_directories(
@@ -15,7 +15,7 @@ endif()
 
 # --- Set Source Files to Project
 #
-add_executable(Connection main.cpp)
+add_executable(Client main.cpp)
 
 
 # --- Find Libraries
@@ -84,7 +84,7 @@ endforeach()
 
 # --- Set Library to project
 #
-target_link_libraries(Connection ${MY_LIBS} ${EXTRA_LIBS})
+target_link_libraries(Client ${MY_LIBS} ${EXTRA_LIBS})
 
 
 # --- copy Static Libraries to dir[vs2015/src/Debug]
