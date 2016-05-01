@@ -11,8 +11,10 @@ pos_(0, 0),
 net_("127.0.0.1", 12345) {
   font_.setSize(50);
 
+  recv_.init(54321);
+
   enable_ = true;
-  th_ = std::thread([&] {
+  send_th_ = std::thread([&] {
     while (true) {
       picojson::object obj;
       obj.emplace(std::make_pair("posx", pos_.x));
@@ -25,7 +27,24 @@ net_("127.0.0.1", 12345) {
     }
   });
 
-  th_.detach();
+  recv_th_ = std::thread([&] {
+    while (true) {
+      std::string data;
+      recv_ >> data;
+      if (data.size() < 8) continue;
+      picojson::value val;
+      picojson::parse(val, data);
+      picojson::object obj(val.get<picojson::object>());
+
+      e_pos_.x = obj["posx"].get<double>();
+      e_pos_.y = obj["posy"].get<double>();
+
+      if (!enable_) break;
+    }
+  });
+
+  send_th_.detach();
+  recv_th_.detach();
 
   std::cout << "start title" << std::endl;
 }
@@ -50,6 +69,7 @@ void Title::draw() {
   font_.draw("Title", Vec2f(app_->windowCenter()));
 
   drawRect(Vec3f(pos_), Vec2f(50, 50), ColorA::white());
+  drawRect(Vec3f(e_pos_), Vec2f(50, 50), ColorA::red());
 }
 
 

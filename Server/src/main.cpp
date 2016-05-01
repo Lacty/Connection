@@ -4,10 +4,14 @@
 
 
 int main() {
-  Udp udp;
-  udp.init(12345);
+  Udp recv;
+  recv.init(12345);
+
+  Udp send;
+  send.init(54321, "127.0.0.1");
 
   while (true) {
-    std::cout << udp.recv() << std::endl;
+    std::string data(recv.recv());
+    send << data;
   }
 }

@@ -9,10 +9,13 @@ class Title : public SceneBase {
 private:
   Font font_;
   Vec2d pos_;
+  Vec2d e_pos_;
   Network net_;
+  Udp recv_;
 
-  std::thread th_;
-  bool enable_;;
+  std::thread send_th_;
+  std::thread recv_th_;
+  bool enable_;
   
 public:
   Title(AppNative* app);
