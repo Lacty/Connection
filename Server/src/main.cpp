@@ -5,6 +5,9 @@
 
 int main() {
   Udp udp;
-  udp.init(12345, "192.168.10.179");
-  udp << "hoge";
+  udp.init(12345);
+
+  while (true) {
+    std::cout << udp.recv() << std::endl;
+  }
 }

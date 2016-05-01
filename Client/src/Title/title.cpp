@@ -8,7 +8,7 @@ Title::Title(AppNative* app) :
 SceneBase(app, Fade(Fade::Type::In)),
 font_(loadAsset("rounded-l-mplus-1c-regular.ttf")),
 pos_(0, 0),
-net_("112.78.125.193", 12345) {
+net_("127.0.0.1", 12345) {
   font_.setSize(50);
   std::cout << "start title" << std::endl;
 }
@@ -27,6 +27,14 @@ void Title::update() {
   if (app_->isPressKey(GLFW_KEY_A)) { pos_.x -= speed; }
   if (app_->isPressKey(GLFW_KEY_W)) { pos_.y += speed; }
   if (app_->isPressKey(GLFW_KEY_S)) { pos_.y -= speed; }
+
+  picojson::object obj;
+  obj.emplace(std::make_pair("posx", pos_.x));
+  obj.emplace(std::make_pair("posy", pos_.y));
+
+  picojson::value val(obj);
+
+  net_.send(val.serialize());
 }
 
 void Title::draw() {
