@@ -1,4 +1,4 @@
-# Install script for directory: /Users/yanai/Desktop/Connection/src/Key
+# Install script for directory: /Users/yanai/Desktop/Connection/Client/src/Key
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

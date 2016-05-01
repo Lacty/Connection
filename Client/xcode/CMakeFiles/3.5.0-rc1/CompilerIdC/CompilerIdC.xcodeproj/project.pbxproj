@@ -84,7 +84,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
 				SYMROOT = .;
 				
-				MACOSX_DEPLOYMENT_TARGET = "10.10";
+				
 				SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk";
 			};
 			name = Debug;

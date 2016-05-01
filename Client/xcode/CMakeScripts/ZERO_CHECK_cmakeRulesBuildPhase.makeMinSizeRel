@@ -2,9 +2,9 @@
 # Custom rules for ZERO_CHECK
 .SUFFIXES: 
 all: \
-	/Users/yanai/Desktop/Connection/xcode/CMakeFiles/ZERO_CHECK
+	/Users/yanai/Desktop/Connection/Client/xcode/CMakeFiles/ZERO_CHECK
 
 
-/Users/yanai/Desktop/Connection/xcode/CMakeFiles/ZERO_CHECK: 
+/Users/yanai/Desktop/Connection/Client/xcode/CMakeFiles/ZERO_CHECK: 
 	echo ""
-	make -f /Users/yanai/Desktop/Connection/xcode/CMakeScripts/ReRunCMake.make
+	make -f /Users/yanai/Desktop/Connection/Client/xcode/CMakeScripts/ReRunCMake.make

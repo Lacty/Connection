@@ -64,14 +64,12 @@ void Udp::recv(std::string& data) {
   memset(buf, 0, sizeof(buf));
 
   int nrecv = ::recv(sock_, buf, BUF_SIZE, 0);
-
-  std::cout << buf << " : " << nrecv << std::endl;
-
+  
   data = buf;
   data.resize(nrecv);
 
   // err check if Recv Failed
-  assert (nrecv != 0);
+  assert(nrecv != 0);
 }
 
 void Udp::send(const std::string& data) {

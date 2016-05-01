@@ -102,7 +102,7 @@ bool Tcp::accept(Tcp& src) {
 */
 
 bool Tcp::connect(const std::string &address, const int port) {
-  closesocket(sock_);
+  //closeSock(sock_);
   sock_ = ::socket(AF_INET, SOCK_STREAM, 0);
   
   // report err if failed
@@ -119,7 +119,7 @@ bool Tcp::connect(const std::string &address, const int port) {
 
   // try to connect throught sock
   if (-1 == ::connect(sock_, (sockaddr*)&addr_, sizeof(addr_))) {
-    GetLastError();
+    //GetLastError();
     //assert(!"Socket::connect() err");
     closeSock(sock_);
     return false;

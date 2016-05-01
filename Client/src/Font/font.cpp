@@ -16,6 +16,6 @@ void Font::draw(const std::string& str, const Vec2f& pos) {
 
 void Font::drawCenter(const std::string& str, const Vec2f& pos) {
   float offset_x = (float)font_.BBox(str.c_str(), (int)str.size()).Upper().X();
-  std::wstring wstr = cv_.from_bytes(str.c_str());
-  font_.Render(wstr.c_str(), (int)str.size(), FTPoint(pos.x - offset_x * 0.5f, pos.y));
+  //std::wstring wstr = cv_.from_bytes(str.c_str());
+  font_.Render(str.c_str(), (int)str.size(), FTPoint(pos.x - offset_x * 0.5f, pos.y));
 }

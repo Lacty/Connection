@@ -1,4 +1,4 @@
-# Install script for directory: /Users/yanai/Desktop/Connection/src/Noncopyable
+# Install script for directory: /Users/yanai/Desktop/Connection/Client/src/Noncopyable
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

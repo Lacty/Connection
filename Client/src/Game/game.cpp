@@ -18,7 +18,7 @@ vis_(&media_) {
   data_.push_back("Hi XD");
   data_.push_back("my name is Yanai");
   data_.push_back("i'm C++er");
-  data_.push_back(u8"“ú–{Œê");
+  data_.push_back("");
   data_.push_back("Tw @Lost206");
   data_.push_back("Git /Lacty");
   data_.push_back("Sound Visualizer");
