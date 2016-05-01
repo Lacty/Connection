@@ -10,6 +10,9 @@ private:
   Font font_;
   Vec2d pos_;
   Network net_;
+
+  std::thread th_;
+  bool enable_;;
   
 public:
   Title(AppNative* app);

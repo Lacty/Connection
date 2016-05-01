@@ -10,6 +10,23 @@ font_(loadAsset("rounded-l-mplus-1c-regular.ttf")),
 pos_(0, 0),
 net_("127.0.0.1", 12345) {
   font_.setSize(50);
+
+  enable_ = true;
+  th_ = std::thread([&] {
+    while (true) {
+      picojson::object obj;
+      obj.emplace(std::make_pair("posx", pos_.x));
+      obj.emplace(std::make_pair("posy", pos_.y));
+
+      picojson::value val(obj);
+
+      net_.send(val.serialize());
+      if (!enable_) break;
+    }
+  });
+
+  th_.detach();
+
   std::cout << "start title" << std::endl;
 }
 
@@ -21,20 +38,12 @@ Title::~Title() {
 const float speed = 10;
 
 void Title::update() {
-  if (app_->isPushKey(GLFW_KEY_N)) { is_finish_ = true; fade_ = Fade(Fade::Type::Out); }
+  if (app_->isPushKey(GLFW_KEY_N)) { enable_ = false; is_finish_ = true; fade_ = Fade(Fade::Type::Out); }
 
   if (app_->isPressKey(GLFW_KEY_D)) { pos_.x += speed; }
   if (app_->isPressKey(GLFW_KEY_A)) { pos_.x -= speed; }
   if (app_->isPressKey(GLFW_KEY_W)) { pos_.y += speed; }
   if (app_->isPressKey(GLFW_KEY_S)) { pos_.y -= speed; }
-
-  picojson::object obj;
-  obj.emplace(std::make_pair("posx", pos_.x));
-  obj.emplace(std::make_pair("posy", pos_.y));
-
-  picojson::value val(obj);
-
-  net_.send(val.serialize());
 }
 
 void Title::draw() {
